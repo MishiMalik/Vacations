@@ -395,7 +395,15 @@ main {
     right: 0px;
     top: 0px;
     bottom: 0px;
-    height: 45px; }
+    height: 45px;
+    
+  }
+  @media only screen and (max-width:767px) {
+    .footer .subscribe-btn {
+     width: fit-content;
+      
+    }
+  }
   .footer .footer-line {
     height: 0px !important;
     border: 1px solid rgba(170, 170, 170, 0.8) !important;
