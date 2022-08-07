@@ -1,0 +1,107 @@
+body {
+    box-sizing: border-box;
+    font-family: Montserrat;
+
+    @media only screen and (max-width:1440px) and (min-width:1360px) {
+        .container {
+            max-width: 1290px;
+        }
+    }
+}
+
+.btn-transparent {
+    width: 149px;
+    height: 41px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    background-color: transparent;
+
+    a {
+        text-decoration: none !important;
+        color: white;
+    }
+}
+
+.btn-transparent:hover {
+    background-color: #18293D;
+    border: 0px solid #FFFFFF;
+}
+
+.btn-fill {
+    width: 222px;
+    height: 41px;
+    background: #18293D;
+    border-radius: 8px;
+    margin: 0px 10px;
+
+    a {
+        text-decoration: none !important;
+        color: white;
+    }
+}
+
+.btn-fill:hover {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+.btn-fill-yellow {
+    width: 222px;
+    height: 41px;
+    background: #D6BD9E;
+    ;
+    border-radius: 8px;
+    margin: 0px 10px;
+
+    a {
+        text-decoration: none !important;
+        color: #18293D;
+        font-weight: 600;
+    }
+}
+
+.btn-fill-yellow:hover {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+.btn-fill-yellow:hover a {
+    color: white;
+}
+
+
+.btn-fill-2 {
+    width: 222px;
+    height: 41px;
+    background: #18293D;
+    ;
+    border-radius: 8px;
+    margin: 0px 10px;
+
+    a {
+        text-decoration: none !important;
+        color: white;
+        font-weight: 600;
+    }
+}
+a{
+    text-decoration:  none !important;
+}
+
+.btn-fill-2:hover {
+    background-color: transparent;
+    border: 1px solid #18293D;
+}
+
+.btn-fill-2:hover a {
+    color: #18293D;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.nmb-30 {
+    margin-bottom: -30px;
+}

@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Alta Light;
+    src: url(/assets/Alta_Typeface/Alta_light.otf);
+}
+@font-face {
+    font-family:Bahnschrift Light;
+    src: url(/assets/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF);
+}
+@font-face {
+    font-family:Montserrat;
+    src: url(/assets/montserrat/Montserrat-Light.otf);
+}
+
+@font-face {
+    font-family:Montserrat-medium;
+    src: url(/assets/montserrat/Montserrat-Medium.otf);
+}
+.f-48{
+    font-size: 48px;
+    @media only screen and (max-width:767px) {
+        font-size: 30px;
+    }
+
+}
+.f-46{
+    font-size: 46px;
+}
+.f-45{
+    font-size: 45px;
+}
+.f-30{
+    font-size: 30px;
+}
+.f-24{
+    font-size: 24px;
+}
+.f-25{
+    font-size: 25px;
+}
+.f-20{
+    font-size: 20px;
+}
+.f-18{
+    font-size: 18px;
+    color: #898989;
+}
+.f-16{
+    font-size: 16px;
+    color: #898989;
+}
+.f-15{
+    font-size: 15px;
+}
+
+.w-400{
+    font-weight: 400;
+}
+.w-500{
+    font-weight: 500;
+}
+.w-600{
+    font-weight: 600;
+}
+.w-700{
+    font-weight: 700 !important;
+}
+.family-alta{
+    text-align: center;
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+.family-mm
+{
+    font-family: Montserrat-medium;
+}
