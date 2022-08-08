@@ -31,6 +31,15 @@
 .f-30{
     font-size: 30px;
 }
+.f-36{
+    font-size: 36px;
+    @media only screen and (max-width:767px) {
+        font-size: 26px;
+    }
+    @media only screen and (max-width:355px) {
+        font-size: 22px;
+    }
+}
 .f-24{
     font-size: 24px;
 }
@@ -52,6 +61,9 @@
     font-size: 15px;
 }
 
+.f-12{
+    font-size: 12px;
+}
 .w-400{
     font-weight: 400;
 }

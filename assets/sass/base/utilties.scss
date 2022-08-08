@@ -69,6 +69,33 @@ body {
     color: white;
 }
 
+.btn-fill-white{
+    width: 222px;
+    height: 41px;
+    background: white;
+    ;
+    border-radius: 8px;
+    margin: 0px 10px;
+
+    a {
+        text-decoration: none !important;
+        color: #18293D;
+        font-weight: 600;
+    }
+}
+.btn-fill-white:hover{
+    width: 222px;
+    height: 41px;
+    background: #18293D;
+    border-radius: 8px;
+    margin: 0px 10px;
+
+    a {
+        text-decoration: none !important;
+        color: white;
+        font-weight: 600;
+    }
+}
 
 .btn-fill-2 {
     width: 222px;
@@ -104,4 +131,8 @@ button {
 
 .nmb-30 {
     margin-bottom: -30px;
+}
+
+.text-yellow{
+    color: #D6BD9E;
 }

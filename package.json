@@ -9,6 +9,7 @@
   "author": "Mehwish Gul",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "sass-node": "^4.11.2"
   }
 }
