@@ -62,11 +62,11 @@ body {
 
 .btn-fill-yellow:hover {
     background-color: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #D6BD9E;
 }
 
 .btn-fill-yellow:hover a {
-    color: white;
+    color: #18293D !important;
 }
 
 .btn-fill-white{
@@ -135,4 +135,8 @@ button {
 
 .text-yellow{
     color: #D6BD9E;
+}
+.border-video{
+    border: 3px solid #18293D;
+    padding: 15px;
 }

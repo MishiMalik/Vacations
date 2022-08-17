@@ -31,7 +31,7 @@
 
 .f-36 {
   font-size: 36px; }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1360px) {
     .f-36 {
       font-size: 26px; } }
   @media only screen and (max-width: 355px) {
@@ -129,10 +129,10 @@ body {
 
 .btn-fill-yellow:hover {
   background-color: transparent;
-  border: 1px solid #FFFFFF; }
+  border: 1px solid #D6BD9E; }
 
 .btn-fill-yellow:hover a {
-  color: white; }
+  color: #18293D !important; }
 
 .btn-fill-white {
   width: 222px;
@@ -186,6 +186,10 @@ button {
 
 .text-yellow {
   color: #D6BD9E; }
+
+.border-video {
+  border: 3px solid #18293D;
+  padding: 15px; }
 
 .sign-img {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/Group 48095490.png");
@@ -292,10 +296,11 @@ button {
         .header-text h1 {
           font-size: 30px; } }
   .header-line {
-    width: 196px;
+    width: 170px;
     height: 0px;
-    border: 2px solid #FFFFFF;
-    opacity: 1; }
+    border: 0px solid #FFFFFF;
+    opacity: 1;
+    box-shadow: none !important; }
   .header .big-logo {
     width: 484px;
     height: auto; }
