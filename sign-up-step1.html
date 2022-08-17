@@ -20,16 +20,13 @@
                     <img src="assets/images/black.png" alt="" class="img-fluid logo mt-4">
                    </div>
                     <form class="col-lg-8  sign-text mx-auto">
-                        <h1 class="f-36 w-600 family-mm">Create Your Account </h1>
-                        <div class="d-flex">
-                            <p class="f-16 text-dark">Free Access </p>
-                            <p class="f-16 text-yellow">&nbsp;14 days trail</p>
-                        </div>
-                        <input type="text" class="sign-input w-100 mb-3" placeholder="Your Full Name " id="full-name">
-                        <input type="text" class="sign-input w-100 mb-3" placeholder="Your Email Address " >
-                        <input type="text" class="sign-input w-100" placeholder="Your Password ">
-                        <p class="f-12 w-400 me-auto">At least 8 characters.</p>
-                        <button class="btn-fill-2" id="create-account"><a href="sign-up-step1.html">Create Account</a></button>
+                        <h1 class="f-36 w-600 family-mm text-center">Let’s Get To Know You Better </h1>
+                       
+                        <input type="text" class="sign-input w-100 mb-3 mt-3" placeholder="Your Name " id="your-name">
+                        <input type="text" class="sign-input w-100 mb-3" placeholder="Your Partner’s Name">
+                        <input type="date" class="sign-input w-100 mb-3" placeholder="Expected Honeymoon Date">
+                        <button class="btn-fill-2"><a href="sign-up-step2.html">Next (1/2) </a></button>
+                        <a href="sign-up-step2.html" class="mt-2 f-15 py-3 text-dark">Skip for Later</a>
 
                         <div class="sign-small-display">
                             <hr class="sign-line mt-4 w-100">
@@ -54,16 +51,7 @@
 
 
     <script src="assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.slim.js"
-    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
-    crossorigin="anonymous"
-  ></script>
-  <script>
-    $("#create-account").click(function () {
-      window.location.href = "sign-up-step1.html?email=" + $("#email1").val();
-    });
-  </script>
+    <script src="assets/app.js"></script>
 </body>
 
 </html>
