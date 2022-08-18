@@ -3,7 +3,8 @@
     height: 60vh;
     background-repeat: no-repeat !important;
     background-position:top;
-    background-size: cover;
+    background-size: cover !important;
+
     @media only screen and (max-width:767px) {
         height: 100% !important;
     }
