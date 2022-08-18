@@ -103,6 +103,7 @@
         transition: 0.5s;
         /* 0.5 second transition effect to slide in the sidepanel */
         padding-top: 50px;
+        z-index: 100 !important;
     }
 
     /* The sidepanel links */
