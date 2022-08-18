@@ -178,6 +178,10 @@ a {
 .btn-fill-2:hover a {
   color: #18293D !important; }
 
+@media only screen and (max-width: 710px) {
+  .subscribe-btn {
+    width: auto !important; } }
+
 button {
   background-color: transparent;
   border: none; }
@@ -270,7 +274,7 @@ button {
   /* Position and style the close button (top right corner) */ }
   @media only screen and (max-width: 767px) {
     .header {
-      height: 100%; } }
+      height: 100% !important; } }
   @media only screen and (max-width: 767px) {
     .header br {
       display: none; } }

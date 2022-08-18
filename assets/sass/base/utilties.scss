@@ -124,7 +124,12 @@ a{
 .btn-fill-2:hover a {
     color: #18293D !important;
 }
-
+.subscribe-btn{
+    @media only screen and (max-width:710px){
+        width: auto !important;    
+    }
+        
+}
 button {
     background-color: transparent;
     border: none;
