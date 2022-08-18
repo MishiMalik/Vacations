@@ -554,6 +554,9 @@ main .tour-card {
   background-repeat: no-repeat !important;
   background-position: top;
   background-size: cover; }
+  @media only screen and (max-width: 767px) {
+    .blog-header {
+      height: 100% !important; } }
 
 .active-port {
   color: black !important;
