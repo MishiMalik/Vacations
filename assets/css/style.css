@@ -164,7 +164,7 @@ body {
   margin: 0px 10px; }
   .btn-fill-2 a {
     text-decoration: none !important;
-    color: white;
+    color: white !important;
     font-weight: 600; }
 
 a {
@@ -172,10 +172,11 @@ a {
 
 .btn-fill-2:hover {
   background-color: transparent;
-  border: 1px solid #18293D; }
+  border: 1px solid #18293D;
+  color: #18293D !important; }
 
 .btn-fill-2:hover a {
-  color: #18293D; }
+  color: #18293D !important; }
 
 button {
   background-color: transparent;

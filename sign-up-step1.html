@@ -22,7 +22,7 @@
                     <form class="col-lg-8  sign-text mx-auto">
                         <h1 class="f-36 w-600 family-mm text-center">Let’s Get To Know You Better </h1>
                        
-                        <input type="text" class="sign-input w-100 mb-3 mt-3" placeholder="Your Name " id="your-name">
+                        <input type="email" class="sign-input w-100 mb-3 mt-3" placeholder="Your Name " id="your-name">
                         <input type="text" class="sign-input w-100 mb-3" placeholder="Your Partner’s Name">
                         <input type="date" class="sign-input w-100 mb-3" placeholder="Expected Honeymoon Date">
                         <button class="btn-fill-2"><a href="sign-up-step2.html">Next (1/2) </a></button>
@@ -51,7 +51,18 @@
 
 
     <script src="assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/app.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+    crossorigin="anonymous"
+  ></script>
+    <script>
+        let searchParams = new URLSearchParams(window.location.search);
+  
+        if (searchParams.has("email")) {
+          $("#your-name").val(searchParams.get("email"));
+        }
+      </script>
 </body>
 
 </html>
