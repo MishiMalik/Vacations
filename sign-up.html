@@ -25,9 +25,9 @@
                             <p class="f-16 text-dark">Free Access </p>
                             <p class="f-16 text-yellow">&nbsp;14 days trail</p>
                         </div>
-                        <input type="email" class="sign-input w-100 mb-3" required placeholder="Your Full Name " id="full-name">
-                        <input type="text" class="sign-input w-100 mb-3" placeholder="Your Email Address " required>
-                        <input type="text" class="sign-input w-100" placeholder="Your Password " required>
+                        <input type="text" class="sign-input w-100 mb-3" required placeholder="Your Full Name " id="full-name">
+                        <input type="email" class="sign-input w-100 mb-3" placeholder="Your Email Address " required>
+                        <input type="password" class="sign-input w-100" placeholder="Your Password " required>
                         <p class="f-12 w-400 me-auto">At least 8 characters.</p>
                         <button class="btn-fill-2 " id="create-account"><a >Create Account</a></button>
 
@@ -61,7 +61,7 @@
   ></script>
   <script>
     $("#create-account").click(function () {
-      window.location.href = "sign-up-step1.html?email=" + $("#full-name").val();
+      window.location.href = "sign-up-step1.html?text=" + $("#full-name").val();
     });
   </script>
 </body>
