@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap-5/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <title>BON LUNAGE-Blog</title>
+</head>
+
+<body>
+    <header class="header blog-header" id="top">
+        <div class="container h-100">
+            <div class=" d-flex flex-column justify-content-between h-100">
+                <div class="header-navbar d-flex justify-content-between  mt-4">
+                    <a href="index.html"> <img src="assets/images/big.png" alt="Logo" class="img-fluid logo"></a>
+                    <div class="nav-div">
+                        <div class="d-flex ">
+                            <div class="header-btns">
+                                <button class="btn-transparent"><a href="sign-in.html" class="f-16 text-white">Log
+                                        In</a></button>
+                                <button class="btn-fill"><a href="sign-up.html" class="f-16 text-white">Try it for Free
+                                    </a></button>
+                            </div>
+                            <button onclick="openNav()">
+                                <img src="assets/images/menu (3).svg" alt="menu" class="img-fluid">
+                            </button>
+
+                            <div id="mySidepanel" class="sidepanel">
+                                <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</div>
+                                <a href="index.html" class="mt-5 active side-link">HOME</a>
+                                <a href="#" class="side-link">PLAN IT</a>
+                                <a href="#" class="side-link">FUND IT</a>
+                                <a href="#" class="side-link">PRICING</a>
+                                <a href="#" class="side-link">BLOG</a>
+                                <a href="#" class="side-link">FIND REGISTRY</a>
+
+                                <div class="header-social-side d-flex justify-content-center w-100">
+                                    <a href="https://www.facebook.com/bonlunage"> <img
+                                            src="assets/images/bx_bxl-facebook.svg" alt="" class="img-fluid me-2"></a>
+                                    <a href="https://www.instagram.com/bonlunage/"> <img
+                                            src="assets/images/akar-icons_instagram-fill.svg" alt=""
+                                            class="img-fluid me-3"></a>
+                                    <a href="https://www.pinterest.at/BonLunage/"> <img src="assets/images/p1.svg"
+                                            alt="" class="img-fluid me-3"></a>
+                                    <a href="https://www.tiktok.com/@bonlunage"> <img src="assets/images/tiktok-1.svg"
+                                            alt="" class="img-fluid me-3"></a>
+                                    <a href="javier@bonlunage.com"><img src="assets/images/feather_mail.svg" alt=""
+                                            class="img-fluid me-3"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-text text-center text-white">
+                    <h2 class="f-45 w-700 mt-5">
+                        Blog
+                    </h2>
+                    <p class="f-15 text-white w-400 col-lg-4 col-md-6 col-11 mx-auto">
+                        Simple and affordable pricing for all users, whether you travel regularly or occasionally.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="mt-5 ">
+
+            <!-- ===portfolio==== -->
+        <div class="portfolio container" id="portfolio">
+           
+           <div class="state__list d-flex justify-content-center">
+                <button type="button" data-filter=".all" class="f-15 state__list--item active-port all">
+                    ALL POSTS
+                </button>
+                <button type="button" data-filter=".tips" class="f-15 state__list--item">
+                    TRAVEL TIPS
+                </button>
+                <button type="button" data-filter=".product" class="f-15 state__list--item">
+                    PRODUCT UPDATE
+                </button>
+                <button type="button" data-filter=".bucket" class="f-15 state__list--item">
+                   BUCKET LIST
+                </button>
+                <button type="button" data-filter=".travels" class=" f-15 state__list--item">
+                    BONLUNAGE TRAVELS
+                </button>
+               
+            </div>
+            <div class="portfolio__projects grid row" data-aos="zoom-in-down">
+              
+                <div class="col-lg-4 col-md-6 mt-3 portfolio__projects-item recent all p-3 mx-auto">
+                    <div class="tour-card">
+                        <div class="bg"></div>
+                        <div class="tour-img">
+                            <img src="assets/images/Rectangle 1434 (1).png" alt="" class="img-fluid">
+                        </div>
+                        <div class="tour-text ">
+                            <h1 class="f-24 w-600 text-dark family-mm">Blog title</h1>
+                            <p class="f-16 w-400 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vitae quam et tellus faucibus malesuada enim. Lorem arcu et morbi fusce ultrices
+                                libero, nibh. Urna ut a et.</p>
+
+                            <a href="" class="f-16 w-600 text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3 portfolio__projects-item tips all p-3 mx-auto">
+                    <div class="tour-card">
+                        <div class="bg"></div>
+                        <div class="tour-img">
+                            <img src="assets/images/Rectangle 1434.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="tour-text ">
+                            <h1 class="f-24 w-600 text-dark family-mm">Blog title</h1>
+                            <p class="f-16 w-400 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vitae quam et tellus faucibus malesuada enim. Lorem arcu et morbi fusce ultrices
+                                libero, nibh. Urna ut a et.</p>
+
+                            <a href="" class="f-16 w-600 text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3 portfolio__projects-item tips product all p-3 mx-auto">
+                    <div class="tour-card">
+                        <div class="bg"></div>
+                        <div class="tour-img">
+                            <img src="assets/images/Rectangle 14342.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="tour-text ">
+                            <h1 class="f-24 w-600 text-dark family-mm">Blog title</h1>
+                            <p class="f-16 w-400 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vitae quam et tellus faucibus malesuada enim. Lorem arcu et morbi fusce ultrices
+                                libero, nibh. Urna ut a et.</p>
+
+                            <a href="" class="f-16 w-600 text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3 portfolio__projects-item bucket all p-3 mx-auto">
+                    <div class="tour-card">
+                        <div class="bg"></div>
+                        <div class="tour-img">
+                            <img src="assets/images/Rectangle 1434 (1).png" alt="" class="img-fluid">
+                        </div>
+                        <div class="tour-text ">
+                            <h1 class="f-24 w-600 text-dark family-mm">Blog title</h1>
+                            <p class="f-16 w-400 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vitae quam et tellus faucibus malesuada enim. Lorem arcu et morbi fusce ultrices
+                                libero, nibh. Urna ut a et.</p>
+
+                            <a href="" class="f-16 w-600 text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3 portfolio__projects-item travels bucket all p-3 mx-auto">
+                    <div class="tour-card">
+                        <div class="bg"></div>
+                        <div class="tour-img">
+                            <img src="assets/images/Rectangle 14342.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="tour-text ">
+                            <h1 class="f-24 w-600 text-dark family-mm">Blog title</h1>
+                            <p class="f-16 w-400 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vitae quam et tellus faucibus malesuada enim. Lorem arcu et morbi fusce ultrices
+                                libero, nibh. Urna ut a et.</p>
+
+                            <a href="" class="f-16 w-600 text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3 portfolio__projects-item travels all p-3 mx-auto">
+                    <div class="tour-card">
+                        <div class="bg"></div>
+                        <div class="tour-img">
+                            <img src="assets/images/Rectangle 1434.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="tour-text ">
+                            <h1 class="f-24 w-600 text-dark family-mm">Blog title</h1>
+                            <p class="f-16 w-400 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vitae quam et tellus faucibus malesuada enim. Lorem arcu et morbi fusce ultrices
+                                libero, nibh. Urna ut a et.</p>
+
+                            <a href="" class="f-16 w-600 text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3 portfolio__projects-item travels bucket all p-3 mx-auto">
+                    <div class="tour-card">
+                        <div class="bg"></div>
+                        <div class="tour-img">
+                            <img src="assets/images/Rectangle 1434.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="tour-text ">
+                            <h1 class="f-24 w-600 text-dark family-mm">Blog title</h1>
+                            <p class="f-16 w-400 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vitae quam et tellus faucibus malesuada enim. Lorem arcu et morbi fusce ultrices
+                                libero, nibh. Urna ut a et.</p>
+
+                            <a href="" class="f-16 w-600 text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3 portfolio__projects-item travels bucket all p-3 mx-auto">
+                    <div class="tour-card">
+                        <div class="bg"></div>
+                        <div class="tour-img">
+                            <img src="assets/images/Rectangle 14342.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="tour-text ">
+                            <h1 class="f-24 w-600 text-dark family-mm">Blog title</h1>
+                            <p class="f-16 w-400 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vitae quam et tellus faucibus malesuada enim. Lorem arcu et morbi fusce ultrices
+                                libero, nibh. Urna ut a et.</p>
+
+                            <a href="" class="f-16 w-600 text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3 portfolio__projects-item travels all p-3 mx-auto">
+                    <div class="tour-card">
+                        <div class="bg"></div>
+                        <div class="tour-img">
+                            <img src="assets/images/Rectangle 1434 (1).png" alt="" class="img-fluid">
+                        </div>
+                        <div class="tour-text ">
+                            <h1 class="f-24 w-600 text-dark family-mm">Blog title</h1>
+                            <p class="f-16 w-400 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vitae quam et tellus faucibus malesuada enim. Lorem arcu et morbi fusce ultrices
+                                libero, nibh. Urna ut a et.</p>
+
+                            <a href="" class="f-16 w-600 text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>  
+       
+        </div>
+        </section>
+
+    
+    </main>
+
+    <footer class="mt-5 pt-2 footer">
+        <a href="#top" class="top-arrow">
+            <img src="assets/images/Group 48095492.svg" alt="" class="img-fluid">
+        </a>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="assets/images/7 1.png" alt="" class="img-fluid big-logo">
+                    <h1 class="f-24 w-600 text-white">Want some travel inspiration and tips? Join us. </h1>
+                    <div class="footer-input mt-3">
+                        <input type="text" placeholder="Your e-mail address">
+                        <button class="btn-fill-yellow subscribe-btn m-0 "><a href=""
+                                class="f-16 text-white">Subscribe</a></button>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-12 d-flex flex-column mx-auto">
+                    <h1 class="f-24 text-white w-600 mt-5">Getting Started</h1>
+                    <a href="" class="f-16 w-400 mt-4 text-white">Plan It</a>
+                    <a href="" class="f-16 w-400 mt-4 text-white">Fund It</a>
+                    <a href="" class="f-16 w-400 mt-4 text-white">Pricing </a>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-12 d-flex flex-column">
+                    <h1 class="f-24 text-white w-600 mt-5">Resources</h1>
+                    <a href="" class="f-16 w-400 mt-4 text-white">Blogs</a>
+                    <a href="" class="f-16 w-400 mt-4 text-white">FAQs</a>
+                    <a href="" class="f-16 w-400 mt-4 text-white">Contact Us</a>
+                </div>
+
+
+            </div>
+
+            <hr class="footer-line mt-5">
+
+            <div class="row">
+                <div class="col-lg-6 my-1">
+                    <div class="d-flex text-white footer-terms">
+                        <p class="f-16 w-400 mb-0 pb-0  text-white">© 2022 Bon Lunage, Inc.</p>
+                        <a href="" class="f-16 w-400 ms-3  text-white">Privacy</a>
+                        <a href="" class="f-16 w-400 ms-3  text-white">Terms</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3 my-1">
+                    <div class="footer-social w-100 d-flex justify-content-end">
+                        <a href="https://www.facebook.com/bonlunage"> <img src="assets/images/bx_bxl-facebook.png"
+                                alt="" class="img-fluid me-2"></a>
+                        <a href="https://www.instagram.com/bonlunage/"> <img
+                                src="assets/images/akar-icons_instagram-fill.png" alt="" class="img-fluid me-3"></a>
+                        <a href="https://www.pinterest.at/BonLunage/"> <img src="assets/images/pinterest-icon.svg"
+                                alt="" class="img-fluid me-3"></a>
+                        <a href="https://www.tiktok.com/@bonlunage"><img src="assets/images/tiktok-icon.svg" alt=""
+                                class="img-fluid me-3"></a>
+                        <a href="javier@bonlunage.com "><img src="assets/images/feather_mail.png" alt=""
+                                class="img-fluid "></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="assets/app.js"></script>
+    <script>
+        /* Set the width of the sidebar to 250px (show it) */
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "308px";
+        }
+
+        /* Set the width of the sidebar to 0 (hide it) */
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+
+    </script>
+</body>
+
+</html>
