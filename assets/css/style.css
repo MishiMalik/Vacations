@@ -475,7 +475,8 @@ main .tour-card {
   border-radius: 8px;
   overflow: hidden;
   position: relative;
-  z-index: 20; }
+  z-index: 20;
+  height: 100%; }
   main .tour-card .bg {
     background-image: url("/assets/images/Frame 48095430.png");
     background-size: cover;
@@ -558,6 +559,15 @@ main .tour-card {
     .blog-header {
       height: 100% !important; } }
 
+.portfolio__projects-item .tour-card .tour-text {
+  height: 330px; }
+  .portfolio__projects-item .tour-card .tour-text h1 {
+    max-height: 90px;
+    overflow: hidden; }
+  .portfolio__projects-item .tour-card .tour-text .paragraph-text {
+    height: 120px;
+    overflow: hidden; }
+
 .active-port {
   color: black !important;
   text-decoration: underline !important;
@@ -574,3 +584,36 @@ main .tour-card {
     .state__list--item {
       margin: 10px 5px;
       width: 100% !important; } }
+
+.blog-detail-header {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/honeymoon-money-is-no-object-maldives-e1520806746459.jpg") !important;
+  height: 60vh;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important; }
+  @media only screen and (max-width: 767px) {
+    .blog-detail-header {
+      height: 100% !important; } }
+
+.blog-img {
+  width: 200px !important;
+  object-fit: cover; }
+  @media only screen and (max-width: 500px) {
+    .blog-img {
+      width: 100% !important; } }
+  .blog-img img {
+    width: 200px !important;
+    height: 130px !important;
+    object-fit: cover; }
+    @media only screen and (max-width: 500px) {
+      .blog-img img {
+        width: 100% !important; } }
+
+.blog-row {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 10px; }
+  @media only screen and (max-width: 500px) {
+    .blog-row {
+      flex-direction: column !important; } }

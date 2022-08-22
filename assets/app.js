@@ -16,9 +16,14 @@ $(document).ready(function(){
   
       let selector=$(e.target).attr('data-filter');
       $('.portfolio .grid').isotope({
-        filter:selector
+        
+        filter:selector,
+        
       });
       return false;
     });
     
   });
+
+
+

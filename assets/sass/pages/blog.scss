@@ -9,6 +9,24 @@
         height: 100% !important;
     }
 }
+.portfolio__projects-item{
+    // min-height: 500px !important;
+    .tour-card{
+        // min-height: 500px !important;
+     .tour-text{
+        height: 330px;
+        h1{
+            max-height: 90px;
+            overflow: hidden;
+        }
+        .paragraph-text{
+           height: 120px;
+            overflow: hidden;
+            
+        }
+     }
+    }
+}
 .active-port{
     color: black !important ;
     text-decoration: underline !important;
@@ -25,5 +43,41 @@ flex-direction: column;    }
     @media only screen and (max-width:710px){
         margin: 10px 5px;
         width: 100% !important;
+    }
+}
+.blog-detail-header{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/honeymoon-money-is-no-object-maldives-e1520806746459.jpg') !important;
+    height: 60vh;
+    background-repeat: no-repeat !important;
+    background-position:center !important;
+    background-size: cover !important;
+
+    @media only screen and (max-width:767px) {
+        height: 100% !important;
+    }
+}
+.blog-img{
+width: 200px !important;
+object-fit: cover;
+@media only screen and (max-width:500px){
+    width:100% !important;
+ }
+ img{
+   
+    width: 200px !important;
+    height: 130px !important;
+    object-fit: cover;
+    @media only screen and (max-width:500px){
+       width:100% !important;
+    }
+}
+}
+.blog-row{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 10px;
+    @media only screen and (max-width:500px){
+        flex-direction: column !important;
     }
 }
