@@ -61,12 +61,12 @@ body {
 }
 
 .btn-fill-yellow:hover {
-    background-color: transparent;
+    background-color: #18293D;
     border: 1px solid #D6BD9E;
 }
 
 .btn-fill-yellow:hover a {
-    color: #18293D !important;
+    color: white !important;
 }
 
 .btn-fill-white{
@@ -86,7 +86,7 @@ body {
 .btn-fill-white:hover{
     width: 222px;
     height: 41px;
-    background: #18293D;
+    background: #D6BD9E;
     border-radius: 8px;
     margin: 0px 10px;
 
@@ -144,4 +144,7 @@ button {
 .border-video{
     border: 3px solid #18293D;
     padding: 15px;
+}
+.border-bottom{
+    border-bottom: none !important;
 }

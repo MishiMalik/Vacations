@@ -193,11 +193,11 @@ main {
 
     .pricing {
         background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url('/assets/images/Rectangle\ 11.png');
+            url('/assets/images/Group\ 48095490.png');
         height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position:bottom;
         padding: 50px 0px !important;
         ul{
             width: fit-content;
@@ -231,7 +231,18 @@ main {
                 border: 1px solid rgba(22, 23, 23, 0.12);
             }
         }
-
+        .price-table{
+            @media only screen and (max-width:600px){
+                overflow: hidden;
+                overflow-x: scroll;
+            }
+            .table{
+                @media only screen and (max-width:600px){
+                    width: 700px;
+                    overflow-x: scroll;
+                }
+            }
+        }
     }
 
     .accordian {
