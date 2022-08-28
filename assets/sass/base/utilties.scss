@@ -141,10 +141,16 @@ button {
 .text-yellow{
     color: #D6BD9E;
 }
+.text-gray{
+    color: #999999;
+}
 .border-video{
     border: 3px solid #18293D;
     padding: 15px;
 }
 .border-bottom{
     border-bottom: none !important;
+}
+.right-line{
+border-right: 1px solid #18293D;
 }

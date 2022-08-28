@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/bootstrap-5/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css"
+        integrity="sha512-2L0dEjIN/DAmTV5puHriEIuQU/IL3CoPm/4eyZp3bM8dnaXri6lK8u6DC5L96b+YSs9f3Le81dDRZUSYeX4QcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>BON LUNAGE-Plan-It</title>
+</head>
+
+<body>
+    <header class="header plan-header1" id="top">
+        <div class="container h-100">
+            <div class=" d-flex flex-column align-items-between justify-content-center">
+                <div class="header-navbar d-flex justify-content-between  mt-4">
+                    <a href="index.html"> <img src="assets/images/big.png" alt="Logo" class="img-fluid logo"></a>
+                    <div class="nav-div">
+                        <div class="d-flex ">
+                            <div class="header-btns mx-2">
+                               <a href="sign-up.html" class="f-16 text-white"><img src="assets/images/Group 48095501.svg" alt=""></a>
+                            </div>
+                            <button onclick="openNav()">
+                                <img src="assets/images/menu (3).svg" alt="menu" class="img-fluid">
+                            </button>
+
+                            <div id="mySidepanel" class="sidepanel">
+                                <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</div>
+                                <a href="index.html" class="mt-5 active side-link">HOME</a>
+                                <a href="#" class="side-link">PLAN IT</a>
+                                <a href="#" class="side-link">FUND IT</a>
+                                <a href="#" class="side-link">PRICING</a>
+                                <a href="blog.html" class="side-link">BLOG</a>
+                                <a href="#" class="side-link">FIND REGISTRY</a>
+
+                                <div class="header-social-side d-flex justify-content-center w-100">
+                                    <a href="https://www.facebook.com/bonlunage"> <img
+                                            src="assets/images/bx_bxl-facebook.svg" alt="" class="img-fluid me-2"></a>
+                                    <a href="https://www.instagram.com/bonlunage/"> <img
+                                            src="assets/images/akar-icons_instagram-fill.svg" alt=""
+                                            class="img-fluid me-3"></a>
+                                    <a href="https://www.pinterest.at/BonLunage/"> <img src="assets/images/p1.svg"
+                                            alt="" class="img-fluid me-3"></a>
+                                    <a href="https://www.tiktok.com/@bonlunage"> <img src="assets/images/tiktok-1.svg"
+                                            alt="" class="img-fluid me-3"></a>
+                                    <!-- <a href=""> <img src="assets/images/akar-icons_youtube-fill.svg" alt="" class="img-fluid me-2"></a>
+                    <a href=""><img src="assets/images/ant-design_twitter-outlined.svg" alt=""class="img-fluid me-2"></a> -->
+                                    <a href="mailto: mailto: javier@bonlunage.com"><img
+                                            src="assets/images/feather_mail.svg" alt="" class="img-fluid me-3"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-text text-center text-white">
+
+                    <div class="row">
+                        <div class="col-lg-7  mx-auto">
+
+                            <form id="regForm" action="">
+                               
+
+                                <div class="tab  flex-column align-items-center justify-content-center">
+                                    <h1 class="f-45 w-400 family-alta">
+                                        Hey, John Smith
+                                    </h1>
+
+                                    <p class="f-18 text-white w-400 mx-auto">
+                                        Planning a new trip? Great! Let’s start by
+                                        giving your trip a name.
+                                    </p>
+                                    <div class="step-card">
+                                        <p class="mb-0">
+                                            <input placeholder="Give your trip a name"
+                                                oninput="this.className = 'sign-input-plan  w-100 mb-3'"
+                                                class="sign-input-plan w-100 mb-3" name="fname">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab  flex-column align-items-center justify-content-center">
+                                    <h1 class="f-45 w-400 family-alta">
+                                        Trip Name
+                                    </h1>
+
+                                    <p class="f-18 text-white w-400 mx-auto">
+                                        Which country or countries will you be visiting when on your trip? This will
+                                        allow us to add some great custom features to your itinery.
+                                    </p>
+                                    <div class="step-card mx-auto">
+                                        <div class="filter-input w-100 mb-3">
+                                            <select class="js-example-placeholder-multiple js-states form-control"
+                                                oninput="this.className = ''" multiple="multiple" name="states[]">
+                                                <option> US </option>
+                                                <option>United Arab Emirts</option>
+                                                <option>Wyoming</option>
+                                                <option>Option2</option>
+                                                <option>Option3</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter-input w-100 mb-3">
+                                            <select class="js-example-placeholder-multiple2 js-states form-control"
+                                                oninput="this.className = ''" multiple="multiple" name="states[]">
+                                                <option>Keywords</option>
+                                                <option>United Arab Emirts</option>
+                                                <option>Wyoming</option>
+                                                <option>Option2</option>
+                                                <option>Option3</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- <div class="filter-input w-100 mb-3">
+                                            <select class="js-example-placeholder-multiple2 w-100"
+                                                oninput="this.className = 'sign-input-plan  w-100 mb-3'"
+                                                id="disabledSelect" placeholder="Keywords" name="states[]"
+                                                multiple="multiple">
+                                                <option>Keywords</option>
+                                                <option>United Arab Emirts</option>
+                                                <option>Wyoming</option>
+                                                <option>Option2</option>
+                                                <option>Option3</option>
+                                            </select>
+                                        </div> -->
+
+
+                                    </div>
+                                </div>
+                                <div class="tab  flex-column align-items-center justify-content-center">
+                                    <h1 class="f-45 w-400 family-alta">
+                                        Trip Name
+                                    </h1>
+
+                                    <p class="f-18 text-white w-400 mx-auto">
+                                        Those are great countries to explore, good choice.
+                                    </p>
+                                    <p class="f-18 text-white w-400 mx-auto">
+                                        What kind of trip are you going on? Is a city break, an international trip or a road trip? By letting us know we can enable features specifically designed for your trip type.
+                                    </p>
+                                    <div class="step-card mx-auto">
+                                        <div
+                                            class="sign-input-plan mb-2 d-flex align-items-center justify-content-between w-100 radio-input">
+                                            <label class="f-14 w-600 d-flex align-items-center">
+                                                <input type="radio" name="radio" id="city" class="me-2"
+                                                    oninput="this.className = 'me-2'" />
+                                                City Break
+                                            </label>
+
+                                            <div class="">
+                                                <img src="assets/images/help.svg" alt="" class="me-auto">
+                                            </div>
+
+                                        </div>
+                                        <div
+                                            class="sign-input-plan mb-2 d-flex align-items-center justify-content-between w-100 radio-input">
+                                            <label class="f-14 w-600 d-flex align-items-center">
+                                                <input type="radio" name="radio" id="city" class="me-2" />
+                                                International Trip
+                                            </label>
+
+                                            <div class="">
+                                                <img src="assets/images/help.svg" alt="" class="me-auto">
+                                            </div>
+
+                                        </div>
+
+                                        <div
+                                            class="sign-input-plan mb-2 d-flex align-items-center justify-content-between w-100 radio-input">
+                                            <label class="f-14 w-600 d-flex align-items-center ">
+                                                <input type="radio" name="radio" id="city" class="me-2" />
+                                                Road Trip
+                                            </label>
+
+                                            <div class="">
+                                                <img src="assets/images/help.svg" alt="" class="me-auto">
+                                            </div>
+
+                                        </div>
+
+                                        <div
+                                            class="sign-input-plan mb-2 d-flex align-items-center justify-content-between w-100 radio-input">
+                                            <label class="f-14 w-600 d-flex align-items-center">
+                                                <input type="radio" name="radio" id="city" class="me-2" />
+                                                Staycation
+                                            </label>
+
+                                            <div class="">
+                                                <img src="assets/images/help.svg" alt="" class="me-auto">
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="tab  flex-column align-items-center justify-content-center">
+                                    <h1 class="f-45 w-400 family-alta">
+                                        Trip Name
+                                    </h1>
+
+                                    <p class="f-18 text-white w-400 mx-auto">
+                                        If you know when you’re going, input your dates here. If you don’t, no problem,
+                                        just input the duration. You can make changes later
+                                    </p>
+                                    <div class="step-card mx-auto">
+                                        <div class="tab-form">
+                                            <button type="button" class="tablinks2 active-tab" id="defaultOpen"
+                                                onclick="openTab(event, 'exactDates')">Exact
+                                                Dates</button>
+                                            <button type="button" class="tablinks2"
+                                                onclick="openTab(event, 'totalDays')">Total
+                                                Days</button>
+                                        </div>
+
+                                        <div id="exactDates" class="tabcontent2 ">
+                                            <div class="d-flex mt-2 ">
+                                                <input placeholder="To"
+                                                    oninput="this.className = 'sign-input-plan border-left date-input  w-50 mb-3'"
+                                                    class="sign-input-plan w-50 mb-2 border-left" name="fname">
+                                                <input placeholder="From"
+                                                    oninput="this.className = 'sign-input-plan border-right date-input  w-50 mb-3'"
+                                                    class="sign-input-plan w-50 mb-2 border-right" name="fname">
+                                            </div>
+                                            <button class="mb-0 f-12 text-gray pb-0" id="clear-date"
+                                                onclick="clearDate()">Clear Date</button>
+                                        </div>
+
+                                        <div id="totalDays" class="tabcontent2">
+                                            <input placeholder="Number of Days"
+                                                oninput="this.className = 'sign-input-plan  w-100 mb-2 mt-3'"
+                                                class="sign-input-plan w-100 mb-2 mt-3" name="fname">
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="tab  flex-column align-items-center justify-content-center">
+                                    <h1 class="f-45 w-400 family-alta">
+                                        Trip Name
+                                    </h1>
+                                    <p class="f-18 text-white w-400 mx-auto">
+                                        Finally, what’s your budget?
+                                    </p>
+                                    <p class="f-18 text-white w-400 mx-auto">
+                                        By knowing your budget we can help you to track your spending on Advanced plans.
+                                    </p>
+                                    <div class="step-card mx-auto">
+                                        <div
+                                            class="sign-input-plan mb-2 d-flex align-items-center justify-content-between w-100 radio-input">
+                                            <label class="f-14 w-600 d-flex align-items-center">
+                                                <input type="radio" name="radio" id="city" class="me-2"
+                                                    oninput="this.className = 'me-2'" checked />
+                                               Daily Budget
+                                            </label>
+
+                                            <div class="">
+                                                <img src="assets/images/help.svg" alt="" class="me-auto">
+                                            </div>
+
+                                        </div>
+
+                                        <div
+                                            class="sign-input-plan mb-2 d-flex align-items-center justify-content-between w-100 radio-input">
+                                            <label class="f-14 w-600 d-flex align-items-center">
+                                                <input type="radio" name="radio" id="city" class="me-2"
+                                                    oninput="this.className = 'me-2'" />
+                                                Entire Trip Budget
+                                            </label>
+
+                                        </div>
+
+                                        <div class="d-flex mt-2 ">
+                                          
+                                            <select name="" id="" class="sign-input-plan border-left">
+                                                <option value="">USD $</option>
+                                                <option value="">UAE $</option>
+                                            </select>
+                                            <input type="number" step="0.01" placeholder="$600.00"
+                                                oninput="this.className = 'sign-input-plan border-right date-input form-control  mb-3'"
+                                                class="sign-input-plan form-control  mb-2 border-right" name="fname">
+                                            
+                                        </div>
+                                        <p class="f-10 text-gray text-start">The budget feature will be based on this currency.</p>
+                                        <button type="button" class="f-22 w-600 text-dark mb-0 "  onclick="nextPrev(1)">Skip Budget</button>
+
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="btn-div">
+                                    <button type="button" id="nextBtn" class="mt-3 btn-fill-2 text-white  m-0 h-45"
+                                        onclick="nextPrev(1)">Next</button>
+                                </div>
+                                <!-- Circles which indicates the steps of the form: -->
+
+                            </form>
+                            <div style="text-align:center;margin-top:40px;">
+                                <span class="step"></span>
+                                <span class="step"></span>
+                                <span class="step"></span>
+                                <span class="step"></span>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-7">
+                            <div class="tab  flex-column align-items-center justify-content-center">
+                                <h1 class="f-45 w-400 family-alta">
+                                    Trip Name
+                                </h1>
+                                <p class="f-18 text-white  w-400 mx-auto">
+                                    This all sound amazing!
+                                </p>
+                                <button class="btn-fill-yellow subscribe-btn mb-2 "><a href=""
+                                    class="f-16 text-white">Subscribe</a></button>
+                                 <div class="row cards-row w-100 py-3">
+                                    <div class="col-lg-6 right-line d-flex flex-column align-items-center justify-content-center">
+                                         <h2 class="f-18 w-600 family-mm text-dark">STARTER</h2>
+                                        <p class="f-18 w-400 text-dark">$ 250/Month</p>
+                                        <button class="btn-fill"><a href="sign-up.html" class="f-16">Get Started</a></button>
+                                        <h2 class="f-20 w-600 text-dark mt-2">All you need to get started</h2>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h2 class="f-18 w-600 family-mm text-dark">ADVANCED</h2>
+                                        <p class="f-18 w-400 text-dark">$ 499/Month</p>
+                                        <button class="btn-fill"><a href="sign-up.html" class="f-16">Get FREE TRIAL </a></button>
+                                        <h2 class="f-20 w-600 text-dark mt-2">Perfect if you travel regularly
+
+                                        </h2>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div> -->
+                    </div>
+
+
+                </div>
+                <div class="header-social mx-auto ">
+                    <p class="f-16 w-400 text-white mb-0 pb-0">© 2022 Bon Lunage, Inc.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <script src="assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"
+        integrity="sha512-jhV1NyiaGUuhKDn+6sd6nLLKNMUslj3hf7gDf3FcG1F2Fg1W7v6VO5Il1pxCKJeE4+X+/Ktuqx+v/HHpZJ2NOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

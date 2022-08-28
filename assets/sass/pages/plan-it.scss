@@ -1,0 +1,244 @@
+.plan-header1 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/plan/Plan\ Trip.png') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.plan-header2 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/plan/Plan\ Trip\ \(2\).png') !important;
+
+}
+.plan-header3 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/plan/Plan\ Trip\ \(3\).png') !important;
+
+}
+.plan-header4 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/plan/Plan\ Trip\ \(4\).png') !important;
+
+}
+.plan-header5 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/plan/Plan\ Trip\ \(5\).png') !important;
+
+}
+.sign-input-plan {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: black;
+  border: 1px solid #C5C5C5;
+  border-radius: 8px;
+  height: 45px;
+  padding: 0px 10px;
+
+  @media only screen and (max-width:991px) {
+    width: 100% !important;
+  }
+}
+
+.select2 {
+  width: 100% !important;
+}
+
+// .select2-container--default .select2-selection--multiple .select2-selection__rendered{
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 24px;
+//     color: black;
+//     border: 1px solid #C5C5C5;
+//     border-radius: 8px;
+//     min-height: 45px;
+//     padding: 0px 10px;
+//     overflow: auto;
+// }
+// .select2-container--default .select2-selection--multiple{
+
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 24px;
+//     color: black;
+//     border: 1px solid #C5C5C5 !important;
+//     border-radius: 8px;
+//     min-height: 45px;
+//     padding: 0px 10px;
+//     overflow: auto;
+// }
+
+/* Mark input boxes that get errors during validation: */
+.sign-input-plan.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Step marker: Place in the form. */
+.step {
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+.step-card {
+  background-color: white;
+  padding: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding-bottom: 75px;
+  width: 336px;
+
+}
+
+.h-45 {
+  height: 45px;
+  width: 276px !important;
+
+}
+
+.btn-div {
+  margin-top: -75px !important;
+  position: relative;
+  z-index: 10;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+// .step.active{
+//   display: flex;
+// }
+
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+}
+
+
+input[type="radio"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.070em);
+}
+
+input[type="radio"] {
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #18293D;
+  margin-top: -0.2px;
+  margin-left: -0.2px;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+
+
+
+
+
+/* Style the tab */
+.tab-form {
+  overflow: hidden;
+  background: #E6E6E6;
+  border-radius: 8px;
+  width: 100%;
+  padding: 6px;
+}
+
+/* Style the buttons inside the tab */
+.tab-form button {
+  background-color: transparent;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px 16px;
+  transition: 0.3s;
+  font-size: 14px;
+  color: #999999;
+  width: 50%;
+  height: 29px;
+}
+
+/* Change background color of buttons on hover */
+.tab-form button:hover {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+
+}
+
+/* Create an active/current tablink class */
+.tab-form button.active-tab {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+
+}
+
+/* Style the tab content */
+.tabcontent2 {
+  display: none;
+  padding: 6px 0px;
+  border: 0px solid #ccc;
+  border-top: none;
+
+}
+
+.border-right {
+  border-radius: 0px 8px 8px 0px;
+}
+
+.border-left {
+  border-radius: 8px 0px 0px 8px;
+}
+
+
+.cards-row {
+  background: #FFFFFF;
+  border: 1px solid #18293D;
+  border-radius: 8px;
+}
