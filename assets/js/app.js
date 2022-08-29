@@ -1,13 +1,28 @@
+function formatState (state) {
+    if (!state.id) {
+        return state.text;
+    }
+    var baseUrl = "assets/images/flags";
+    var $state = $(
+        '<span><img width="20px" height="15px" src="' + baseUrl + '/' + state.element.value.toLowerCase() + '.gif" class="img-flag" /> ' + state.text + '</span>'
+    );
+    return $state;
+};
+
 // Select2 Multiple
 $('.js-example-placeholder-multiple').select2({
-    placeholder: "Select a state"
+    placeholder: "Select a state",
+    templateResult: formatState,
+    templateSelection: formatState,
 });
 
 $('.js-example-placeholder-multiple2').select2({
     placeholder: "Select a state"
 });
 
+$('.select2-search__field').css('width', '100%');
 
+var backgrounds = ["plan-header1","plan-header2","plan-header3","plan-header4","plan-header5"];
 
 // Multi-Step Form
 var currentTab = 0;
@@ -18,7 +33,7 @@ function showTab(n) {
     x[n].style.display = "flex";
 
     if (n == (x.length - 1)) {
-        document.getElementById("nextBtn").innerHTML = "Submit";
+        document.getElementById("nextBtn").innerHTML = "Next";
     } else {
         document.getElementById("nextBtn").innerHTML = "Next";
     }
@@ -26,7 +41,10 @@ function showTab(n) {
 }
 
 // Multi form next bt
+var count = 1;
 function nextPrev(n) {
+    $('#top').addClass(backgrounds[count++])
+
     var x = document.getElementsByClassName("tab");
     if (n == 1 && !validateForm()) return false;
     x[currentTab].style.display = "none";
