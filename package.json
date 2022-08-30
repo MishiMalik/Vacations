@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "isotope-cells-by-row": "^1.1.4",
+    "node-module": "^2.0.0",
     "node-sass": "^7.0.1",
     "sass-node": "^4.11.2"
   }
