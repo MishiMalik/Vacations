@@ -72,17 +72,17 @@
                                     <h1 class="f-45 w-400 family-alta">
                                         John Smith & Partner Honeymoon
                                     </h1>
-
+                                    <p class="f-18 text-white w-400 mx-auto">Let’s start planning your Honeymoon!</p>
                                     <p class="f-18 text-white w-400 mx-auto">
-                                        Let’s start planning your Honeymoon. Which country or countries will you visit?
-                                        This will allow us to add some custom features to your itinerary.
+                                        Which destination(s) will you be visiting? This will allow us to add some custom
+                                        features to your itinerary.
                                     </p>
                                     <div class="step-card">
-                                        <p class="mb-0">
+                                        <!-- <p class="mb-0">
                                             <input placeholder="Give your trip a name"
                                                 oninput="this.className = 'sign-input-plan  w-100 mb-3'"
                                                 class="sign-input-plan w-100 mb-3" name="fname">
-                                        </p>
+                                        </p> -->
                                         <div class="filter-input w-100 mb-3">
                                             <select class="js-example-placeholder-multiple js-states form-control"
                                                 oninput="this.className = ''" multiple="multiple" name="states[]">
@@ -100,7 +100,7 @@
                                     </h1>
 
                                     <p class="f-18 text-white w-400 mx-auto">
-                                        These are great countries to explore, good choice!
+                                        These are great places to explore, good choice!
                                     </p>
                                     <p class="f-18 text-white w-400 mx-auto">If you know when you’re going, input your
                                         dates here. If you don’t, just input the duration and you can make changes
@@ -117,21 +117,31 @@
 
                                         <div id="exactDates" class="tabcontent2 ">
                                             <div class="d-flex mt-2 ">
-                                                <input placeholder="To"
+                                                <input type="text" 
+                                                    onfocus="(this.type='date')"
+                                                    onblur="if(!this.value)this.type='text'" 
+                                                    placeholder="To"
                                                     oninput="this.className = 'sign-input-plan border-left date-input  w-50 mb-3'"
-                                                    class="sign-input-plan w-50 mb-2 border-left" name="fname">
-                                                <input placeholder="From"
-                                                    oninput="this.className = 'sign-input-plan border-right date-input  w-50 mb-3'"
-                                                    class="sign-input-plan w-50 mb-2 border-right" name="fname">
+                                                    class="sign-input-plan w-50 mb-2 border-left plan-date"
+                                                    name="fname" 
+                                                    id="date-input1">
+
+                                                <input type="text" 
+                                                    onfocus="(this.type='date')"
+                                                    onblur="if(!this.value)this.type='text'" placeholder="From"
+                                                    oninput="this.className = 'sign-input-plan border-right date-input w-50 mb-3'"
+                                                    class="sign-input-plan w-50 mb-2 border-right plan-date"
+                                                    name="fname"
+                                                    id="date-input2">
                                             </div>
-                                            <button class="mb-0 f-12 text-gray pb-0" id="clear-date"
+                                            <button type="button" class="mb-0 f-12 text-gray pb-0" 
                                                 onclick="clearDate()">Clear Date</button>
                                         </div>
 
                                         <div id="totalDays" class="tabcontent2">
                                             <input placeholder="Number of Days"
-                                                oninput="this.className = 'sign-input-plan  w-100 mb-2 mt-3'"
-                                                class="sign-input-plan w-100 mb-2 mt-3" name="fname">
+                                                oninput="this.className = 'sign-input-plan  w-100 mb-4 mt-3 '"
+                                                class="sign-input-plan w-100 mb-4 mt-3" name="fname">
                                         </div>
 
 

@@ -11,7 +11,7 @@ function formatState (state) {
 
 // Select2 Multiple
 $('.js-example-placeholder-multiple').select2({
-    placeholder: "Select a state",
+    placeholder: "Select Destination (country, region, or city)",
     templateResult: formatState,
     templateSelection: formatState,
 });
@@ -118,5 +118,6 @@ function openTab(evt, cityName) {
 
 // clear date
 function clearDate(){
- document.getElementById('date-input').value="";
+ document.getElementById('date-input1').value="";
+ document.getElementById('date-input2').value="";
 }

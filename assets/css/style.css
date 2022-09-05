@@ -173,14 +173,6 @@ body {
 a {
   text-decoration: none !important; }
 
-.btn-fill-2:hover {
-  background-color: transparent;
-  border: 1px solid #18293D;
-  color: #18293D !important; }
-
-.btn-fill-2:hover a {
-  color: #18293D !important; }
-
 @media only screen and (max-width: 710px) {
   .subscribe-btn {
     width: auto !important; } }
@@ -639,17 +631,17 @@ main .tour-card {
       flex-direction: column !important; } }
 
 .plan-header1 {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/plan/Plan Trip (12).png") !important;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/plan/Plan Trip (8).png") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important; }
 
 .plan-header2 {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/plan/Plan Trip (10).png") !important;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/plan/Plan Trip (9).png") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important; }
 
 .plan-header3 {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/plan/Plan Trip (8).png") !important;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/plan/Plan Trip (11).png") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important; }
 
@@ -728,7 +720,7 @@ main .tour-card {
   width: 276px !important; }
 
 .btn-div {
-  margin-top: -75px !important;
+  margin-top: -85px !important;
   position: relative;
   z-index: 10;
   margin-left: 30px;
@@ -834,3 +826,11 @@ input[type="radio"]:checked::before {
 .select2-selection__choice {
   background-color: white !important;
   color: black; }
+
+.plan-date::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+.plan-date::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+.plan-date::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+  color: transparent; }
+
+.select2-container .select2-search--inline {
+  width: 100%; }
