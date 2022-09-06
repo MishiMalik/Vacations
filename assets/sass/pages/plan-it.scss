@@ -274,5 +274,9 @@ input[type="radio"]:checked::before {
     color: transparent;
 }
 .select2-container .select2-search--inline{
-  width: 100%;
+  float:unset !important;
+}
+.select2-container--default .select2-selection--multiple{
+  font-size: 13px !important;
+  padding: 7px 5px !important;
 }

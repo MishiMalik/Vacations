@@ -11,13 +11,13 @@ function formatState (state) {
 
 // Select2 Multiple
 $('.js-example-placeholder-multiple').select2({
-    placeholder: "Select Destination (country, region, or city)",
+    placeholder: "Select Destination (country or region)",
     templateResult: formatState,
     templateSelection: formatState,
 });
 
 $('.js-example-placeholder-multiple2').select2({
-    placeholder: "Select a state"
+    placeholder: "Select cities"
 });
 
 $('.select2-search__field').css('width', '100%');
