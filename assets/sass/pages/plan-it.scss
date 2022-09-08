@@ -112,7 +112,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   padding-bottom: 75px;
-  width: 336px;
+  width: 360px;
   
   @media only screen and (max-width:400px) {
     padding: 15px;
@@ -123,7 +123,7 @@
 
 .h-45 {
   height: 45px;
-  width: 276px !important;
+  width: 300px !important;
 
 }
 
@@ -257,15 +257,15 @@ input[type="radio"]:checked::before {
 }
 
 
-.select2-selection__choice__remove {
-  float: right;
-  margin-left: 5px
-}
+// .select2-selection__choice__remove {
+//   float: right;
+//   margin-left: 5px
+// }
 
-.select2-selection__choice {
-  background-color: white !important;
-  color: black;
-}
+// .select2-selection__choice {
+//   background-color: white !important;
+//   color: black;
+// }
 
 
 .plan-date::-webkit-datetime-edit-year-field:not([aria-valuenow]),
@@ -273,10 +273,34 @@ input[type="radio"]:checked::before {
 .plan-date::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
     color: transparent;
 }
-.select2-container .select2-search--inline{
-  float:unset !important;
+// .select2-container .select2-search--inline{
+//   float:unset !important;
+// }
+// .select2-container--default .select2-selection--multiple{
+//   font-size: 13px !important;
+//   padding: 7px 5px !important;
+// }
+.select2-container--default .select2-selection--single .select2-selection__arrow b   {
+  display: none !important;
 }
-.select2-container--default .select2-selection--multiple{
-  font-size: 13px !important;
-  padding: 7px 5px !important;
+.select2-selection__rendered{
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+.select2-container--default .select2-selection--single .select2-selection__placeholder{
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+}
+.select2-container .select2-selection--single{
+  height: 40px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content:center !important;
+}
+.add-destination{
+  font-size: 13px;
+  color: #18293D;
+  font-weight: 600;
 }

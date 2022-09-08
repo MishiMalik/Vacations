@@ -1,28 +1,37 @@
-function formatState (state) {
-    if (!state.id) {
-        return state.text;
-    }
-    var baseUrl = "assets/images/flags";
-    var $state = $(
-        '<span><img width="20px" height="15px" src="' + baseUrl + '/' + state.element.value.toLowerCase() + '.gif" class="img-flag" /> ' + state.text + '</span>'
-    );
-    return $state;
-};
 
-// Select2 Multiple
-$('.js-example-placeholder-multiple').select2({
-    placeholder: "Select Destination (country or region)",
-    templateResult: formatState,
-    templateSelection: formatState,
+$(document).ready(function () {
+    $('.js-example-basic-single').select2({
+        placeholder: "Select Destination (country, region or city)",
+        allowClear: true,
+        tags:true
+    });
+    var wrapper = $(".plan-select"); 
+    var add_button = $(".add-destination"); 
+    $(add_button).click(function (e) { 
+        e.preventDefault();
+        var el = $(wrapper).append('<div class="mt-2"><select id="select-custom" class=" signle-input js-example-basic-single js-states form-control mt-2" data-placeholder="Select Destination (country, region or city)"><option></option><option value="UK">United Kingdom</option><option value="US">United States</option><option value="AS">Austrailia</option><option value="CA">Caneda</option><option value="PK">Pakistan</option><option value="IN">India</option><option value="AM">America</option><option value="CH">China</option><option value="JP">Japan</option><option value="SL">SriLanka</option> </select></div>'); //add input box
+        var selectCustom = el.find('select:last-child');
+        selectCustom.select2({
+            placeholder: "Select Destination (country, region or city)",
+            allowClear: true,
+            tags:true
+        });
+        selectCustom.css('margin-top', '0.5rem');
+    });
 });
+// $(document).ready(function () {
+//     $('.js-example-basic-single').select2({
+//         // theme: "classic",
+//         placeholder: "Select Destination (country, region or city)",
+//         allowClear: true
+//     });
+// });
 
-$('.js-example-placeholder-multiple2').select2({
-    placeholder: "Select cities"
-});
+
 
 $('.select2-search__field').css('width', '100%');
 
-var backgrounds = ["plan-header1","plan-header2","plan-header3","plan-header4","plan-header5"];
+var backgrounds = ["plan-header1", "plan-header2", "plan-header3", "plan-header4", "plan-header5"];
 
 // Multi-Step Form
 var currentTab = 0;
@@ -104,20 +113,20 @@ function openTab(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent2");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+        tabcontent[i].style.display = "none";
     }
     tablinks = document.getElementsByClassName("tablinks2");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+        tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
     }
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active-tab";
-  }
+}
 
 // document.getElementById("defaultOpen").click();
 
 // clear date
-function clearDate(){
- document.getElementById('date-input1').value="";
- document.getElementById('date-input2').value="";
+function clearDate() {
+    document.getElementById('date-input1').value = "";
+    document.getElementById('date-input2').value = "";
 }
