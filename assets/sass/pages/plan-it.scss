@@ -116,15 +116,23 @@
   
   @media only screen and (max-width:400px) {
     padding: 15px;
-    width:300px;
+    width:350px;
     padding-bottom: 75px;
+}
+@media only screen and (max-width:370px) {
+  width:300px !important;
 }
 }
 
 .h-45 {
   height: 45px;
   width: 300px !important;
-
+  @media only screen and (max-width:400px) {
+    width:320px !important;
+}
+@media only screen and (max-width:370px) {
+  width:270px !important;
+}
 }
 
 .btn-div {
