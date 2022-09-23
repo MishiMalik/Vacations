@@ -9,14 +9,25 @@
         height: 100% !important;
     }
 }
-.portfolio__projects-item{
     // min-height: 500px !important;
     .tour-card{
         // min-height: 500px !important;
      .tour-text{
-        height: 330px;
+        height: 300px;
         h1{
-            max-height: 90px;
+            height: 60px;
+            overflow: hidden;
+        }
+        .paragraph-text{
+          height: 120px;
+            overflow: hidden;
+            
+        }
+     }
+     .tour-text-home{
+        max-height: 300px !important;
+        h1{
+            height: 60px;
             overflow: hidden;
         }
         .paragraph-text{
@@ -26,7 +37,6 @@
         }
      }
     }
-}
 .active-port{
     color: black !important ;
     text-decoration: underline !important;

@@ -1,0 +1,105 @@
+.dashboard-body{
+    background: #F5F5F5;
+}
+.header-dashboard{
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-position: center;
+
+}
+.dashboard-row{
+    @media only screen and (max-width: 991px){
+        flex-direction: column;
+    }
+}
+.dashboard-row-name{
+    @media only screen and (max-width: 468px){
+        flex-direction: column;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        text-align: left;
+    }
+}
+
+
+
+// overview page
+/* Style the tab */
+
+.tab {
+    overflow: hidden;
+   
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  
+  .tablinks{
+    background-color: none !important;
+    border: none !important;
+    color: #C5C5C5;
+    font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+text-transform: capitalize;
+
+
+@media only screen and (max-width:500px){
+    font-size: 14px;
+}
+@media only screen and (max-width:350px){
+    font-size: 12px;
+}
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    color: black;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+  }
+  
+  .tab button .tab-icon{
+    fill: #ccc;
+  }
+  .tab button.active .tab-icon{
+    fill: black;
+  }
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+  .overview-img{
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+border-radius: 8px;
+  }
+  .card{
+    background: #FFFFFF;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+  }
+  .reservation-option{
+    background: #FFFFFF;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+//   width: 156.11px;
+  height: 153px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .budget-col{
+    border-left: 1px solid #999999;
+    @media only screen and (max-width:991px){
+        border-left: none;
+    }
+  }
+  

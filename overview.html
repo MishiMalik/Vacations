@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/bootstrap-5/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css"
+        integrity="sha512-2L0dEjIN/DAmTV5puHriEIuQU/IL3CoPm/4eyZp3bM8dnaXri6lK8u6DC5L96b+YSs9f3Le81dDRZUSYeX4QcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/calendar-01/css/style.css">
+    <title>BON LUNAGE - Dashboard </title>
+</head>
+
+<body class="dashboard-body">
+    <header class="header-dashboard ">
+        <div class="container h-100">
+            <div class=" d-flex flex-column align-items-between justify-content-center">
+                <div class="header-navbar d-flex justify-content-between  align-items-start">
+                    <a href="index.html"> <img src="assets/images/8 1.png" alt="Logo" class="img-fluid logo"></a>
+                    <div class="nav-div">
+                        <div class="d-flex ">
+                            <div class="header-btns mx-2 mt-4">
+                                <a href="sign-up.html" class="f-16 text-white"><img
+                                        src="assets/images/Group 48095501.svg" alt=""></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 p-0 m-0">
+                    <div class="d-flex justify-content-between align-items-center dashboard-row">
+                        <div class="">
+                            <div class="d-flex align-items-center dashboard-row-name ">
+                               <div class="d-flex align-items-center">
+                                <a href=""> <img src="assets/images/Vector (1).png" alt="" class="me-2 "></a>
+                                <h1 class="f-45 text-yellow w-600 family-mm m-0 p-0">Hey,&nbsp;</h1>
+                               </div>
+                                <h1 class="f-45 text-black w-600 family-mm m-0 p-0">John Smith</h1>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tab">
+                                <button class="tablinks d-flex align-items-center" onclick="openCity(event, 'London')"
+                                    id="defaultOpen">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="me-1 tab-icon">
+                                        <mask id="mask0_305_384" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="24" height="24">
+                                            <rect width="24" height="24" />
+                                        </mask>
+                                        <g mask="url(#mask0_305_384)">
+                                            <path
+                                                d="M16.65 13L11 7.34995L16.65 1.69995L22.3 7.34995L16.65 13ZM3 11V2.99995H11V11H3ZM13 21V13H21V21H13ZM3 21V13H11V21H3ZM5 8.99995H9V4.99995H5V8.99995ZM16.675 10.2L19.5 7.37495L16.675 4.54995L13.85 7.37495L16.675 10.2ZM15 19H19V15H15V19ZM5 19H9V15H5V19Z"
+                                                 />
+                                        </g>
+                                    </svg>
+                                    Overview</button>
+                                <button class="tablinks d-flex align-items-center" onclick="openCity(event, 'Paris')">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="me-1 tab-icon">
+                                        <mask id="mask0_305_389" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="24" height="24">
+                                            <rect width="24" height="24" />
+                                        </mask>
+                                        <g mask="url(#mask0_305_389)">
+                                            <path
+                                                d="M10.95 18.35L7.4 14.8L8.85 13.35L10.95 15.45L15.15 11.25L16.6 12.7L10.95 18.35ZM5 22C4.45 22 3.979 21.8043 3.587 21.413C3.19567 21.021 3 20.55 3 20V6C3 5.45 3.19567 4.97933 3.587 4.588C3.979 4.196 4.45 4 5 4H6V2H8V4H16V2H18V4H19C19.55 4 20.021 4.196 20.413 4.588C20.8043 4.97933 21 5.45 21 6V20C21 20.55 20.8043 21.021 20.413 21.413C20.021 21.8043 19.55 22 19 22H5ZM5 20H19V10H5V20ZM5 8H19V6H5V8Z"
+                                               />
+                                        </g>
+                                    </svg>
+                                    Calendar View</button>
+                                <button class="tablinks d-flex align-items-center" onclick="openCity(event, 'Tokyo')">
+
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="me-1 tab-icon">
+                                        <mask id="mask0_305_394" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="24" height="24">
+                                            <rect width="24" height="24" fill="#D9D9D9" />
+                                        </mask>
+                                        <g mask="url(#mask0_305_394)">
+                                            <path
+                                                d="M2 21V3H12V7H22V21H2ZM4 19H10V17H4V19ZM4 15H10V13H4V15ZM4 11H10V9H4V11ZM4 7H10V5H4V7ZM12 19H20V9H12V19ZM14 13V11H18V13H14ZM14 17V15H18V17H14Z" />
+                                        </g>
+                                    </svg>
+                                    Budget</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+               
+
+            </div>
+        </div>
+        <div >
+            <!-- Tab content -->
+            <div id="London" class="tabcontent ">
+                <img src="assets/images/overview.png" alt="" class="w-100 mt-3 overview-img">
+                <div class="container-fluid mt-5">
+                    <div class="row">
+                        <div class="col-lg-9 mt-2">
+
+                            <div class="container-fluid px-0 mx-0">
+                                <div class="row px-0 mx-0">
+                                    <div class="col-lg-9">
+                                      <h1 class="f-24 text-black w-600 mb-5">Reservations & Attachments</h1>
+                                      <div class="container-fluid px-0 mx-0">
+                                        <div class="row px-0 mx-0">
+                                            <div class="col-lg-3 col-md-6">
+                                                <a href="">
+                                                    <div class="reservation-option">
+                                                        <img src="assets/images/flight_takeoff.svg" alt="">
+                                                    </div>
+                                                    <p class="f-16 w-600 text-black text-center mt-2">Flights</p>
+                                                </a>
+                                            </div>
+        
+                                            <div class="col-lg-3 col-md-6">
+                                                <a href="">
+                                                    <div class="reservation-option">
+                                                        <img src="assets/images//hotel.svg" alt="">
+                                                    </div>
+                                                    <p class="f-16 w-600 text-black text-center mt-2">Lodging</p>
+                                                </a>
+                                            </div>
+        
+                                            <div class="col-lg-3 col-md-6">
+                                                <a href="">
+                                                    <div class="reservation-option">
+                                                        <img src="assets/images/directions_car.svg" alt="">
+                                                    </div>
+                                                    <p class="f-16 w-600 text-black text-center mt-2">Rental Cars</p>
+                                                </a>
+                                            </div>
+        
+                                            <div class="col-lg-3 col-md-6">
+                                                <a href="">
+                                                    <div class="reservation-option">
+                                                        <img src="assets/images/more_horiz.svg" alt="">
+                                                    </div>
+                                                    <p class="f-16 w-600 text-black text-center mt-2">Others</p>
+                                                </a>
+                                            </div>
+        
+                                          </div>
+                                      </div>
+                                   
+                                    </div>
+                                    <div class="col-lg-3 budget-col">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-12 mx-auto">
+                                                    <h1 class="f-24 text-black w-600 text-center mb-5">Budgeting</h1>
+                                                    <a href="" >
+                                                        <div class="reservation-option">
+                                                            <p class="f-24 w-700 text-black family-mm mb-0 pb-0" >$00.00</p>
+                                                        </div>
+                                                        <p class="f-16 w-600 text-black text-center mt-2">Others</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-3 p-0 mt-2">
+                            <div class="card">
+                                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://mcpenation.com/">Minecraft Website</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="calendar calendar-first" id="calendar_second">
+                                    <div class="calendar_header">
+                                        <button class="switch-month switch-left"> <i
+                                                class="fa fa-chevron-left"></i></button>
+                                        <h2></h2>
+                                        <button class="switch-month switch-right"> <i
+                                                class="fa fa-chevron-right"></i></button>
+                                    </div>
+                                    <div class="calendar_weekdays"></div>
+                                    <div class="calendar_content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+
+
+        <footer class="mt-5 pt-2 footer">
+            <a href="#top" class="top-arrow">
+                <img src="assets/images/Group 48095492.svg" alt="" class="img-fluid">
+            </a>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="assets/images/7 1.png" alt="" class="img-fluid big-logo">
+                        <h1 class="f-24 w-600 text-white">Want some travel inspiration and tips? Join us. </h1>
+                        <div class="footer-input mt-3">
+                            <input type="text" placeholder="Your e-mail address">
+                            <button class="btn-fill-yellow subscribe-btn m-0 "><a href=""
+                                    class="f-16 text-white">Subscribe</a></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-12 d-flex flex-column mx-auto">
+                        <h1 class="f-24 text-white w-600 mt-5">Getting Started</h1>
+                        <a href="" class="f-16 w-400 mt-4 text-white">Plan It</a>
+                        <a href="" class="f-16 w-400 mt-4 text-white">Fund It</a>
+                        <a href="" class="f-16 w-400 mt-4 text-white">Pricing </a>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-12 d-flex flex-column">
+                        <h1 class="f-24 text-white w-600 mt-5">Resources</h1>
+                        <a href="blog.html" class="f-16 w-400 mt-4 text-white">Blogs</a>
+                        <a href="" class="f-16 w-400 mt-4 text-white">FAQs</a>
+                        <a href="" class="f-16 w-400 mt-4 text-white">Contact Us</a>
+                    </div>
+
+
+                </div>
+
+                <hr class="footer-line mt-5">
+
+                <div class="row">
+                    <div class="col-lg-6 my-1">
+                        <div class="d-flex text-white footer-terms">
+                            <p class="f-16 w-400 mb-0 pb-0  text-white">© 2022 Bon Lunage, Inc.</p>
+                            <a href="" class="f-16 w-400 ms-3  text-white">Privacy</a>
+                            <a href="" class="f-16 w-400 ms-3  text-white">Terms</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-3 my-1">
+                        <div class="footer-social w-100 d-flex justify-content-end">
+                            <a href="https://www.facebook.com/bonlunage"> <img src="assets/images/bx_bxl-facebook.png"
+                                    alt="" class="img-fluid me-2"></a>
+                            <a href="https://www.instagram.com/bonlunage/"> <img
+                                    src="assets/images/akar-icons_instagram-fill.png" alt="" class="img-fluid me-3"></a>
+                            <a href="https://www.pinterest.at/BonLunage/"> <img src="assets/images/pinterest-icon.svg"
+                                    alt="" class="img-fluid me-3"></a>
+                            <a href="https://www.tiktok.com/@bonlunage"><img src="assets/images/tiktok-icon.svg" alt=""
+                                    class="img-fluid me-3"></a>
+                            <a href="mailto: mailto: javier@bonlunage.com"><img src="assets/images/feather_mail.png"
+                                    alt="" class="img-fluid "></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </main>
+
+
+
+
+
+    <script src="assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"
+        integrity="sha512-jhV1NyiaGUuhKDn+6sd6nLLKNMUslj3hf7gDf3FcG1F2Fg1W7v6VO5Il1pxCKJeE4+X+/Ktuqx+v/HHpZJ2NOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="/calendar-01/js/main.js"></script>
+</body>
+
+</html>
