@@ -475,32 +475,42 @@ border-radius: 7px;
 .calendar-row--time {
   padding-right: 5px;
   width: 50px;
+  height: 74px;
   display: flex;
   flex-shrink: 0 !important;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: -5px;
+  position: relative;
+  border-bottom: 10px solid transparent !important;
   p {
+    position: absolute;
+    bottom: -18px;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
     color: #C5C5C5;
-   text-align: center;
+   z-index: 1;
   }
 }
-
+.col-time{
+  width: 50px;
+}
+.calendar-row--time-header{
+  height: 46px !important;
+}
 .calendar-row--header{
-  height: 42px;
-background: #DBBC99;
-border-radius: 8px;
-display: flex;
-align-items: center;
+ 
 &-data{
   width: 250px !important;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0 !important;
+  height: 42px;
+  background: #DBBC99;
+  display: flex;
+  align-items: center;
   h1{
 font-weight: 600;
 font-size: 22px;
@@ -520,6 +530,7 @@ color: #FFFFFF;
   display: flex;
   flex-shrink: 0 !important;
   height: 70px;
+  background-color:transparent;
 }
 .calendar-row-body-1{
   border-bottom: 2px dashed #C5C5C5 !important;
@@ -534,11 +545,12 @@ color: #FFFFFF;
 .calendar-card {
 position: absolute;
   padding: 10px;
-  top: 10px;
+  top: 40px;
 background-color: white;
 border-radius: 8px;
   .calendar-inner-card {
     background: #DA6FEB;
+    position: relative;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
     padding: 10px;
@@ -589,4 +601,16 @@ background: #EB946F !important;
 
     .inner-light-blue{
       background: #6FCDEB !important;
+      }
+      .radius-1{
+        border-radius: 8px 0px 0px 8px !important;
+      }
+      .radius-2{
+        border-radius: 0px 8px 8px 0px !important;
+      }
+      .remove-event{
+        color: black;
+        position: absolute;
+        top: 3px;
+        right: 3px;
       }
