@@ -414,5 +414,93 @@ main {
             width: 700px;
             overflow-x: scroll;
         }
+        
+       
     }
 }
+.price-table-bl{
+    position: relative;
+// border-left: 2px solid white !important;
+// margin-left: 10px !important;
+&::before{
+    content: " ";
+        position: absolute;
+        top: 0px;
+        left: 2px !important;
+        bottom: 0px !important;
+        right: 0px !important;
+        background-color: transparent !important;
+        border: 3px solid white !important;
+        border-top: none !important;
+        border-bottom: none !important;
+        width: 98%;
+}
+// &::after{
+//     content: " ";
+//     position: absolute;
+//     top: 0px;
+//     right: -6px !important;
+//     bottom: -2px !important;
+//     width: 2px ;
+//     background-color: white !important;
+// }
+} 
+.price-tb-tr{
+    position: relative;
+    &::before{
+        content: " ";
+        position: absolute;
+        top: 0px;
+        left: 2px !important;
+        bottom: 0px !important;
+        right: 0px !important;
+        background-color: transparent !important;
+        border: 3px solid white !important;
+        border-bottom: none !important;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        width: 98%;
+    }
+}
+.price-table-bb{
+    // border-bottom: 2px solid white !important;
+    position: relative;
+    &::before{
+        content: " ";
+        position: absolute;
+        top: 0px;
+        left: 2px !important;
+        bottom: 0px !important;
+        right: 0px !important;
+        background-color: transparent !important;
+        border: 3px solid white !important;
+        border-top: none !important;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        width: 98%;
+    }
+    // &::after{
+    //     content: " ";
+    //     position: absolute;
+    //     top: 0px;
+    //     right: -6px !important;
+    //     bottom: -2px !important;
+    //     width: 2px ;
+    //     background-color: white !important;
+    //     border-radius: 100px !important;
+    // }
+}
+// .price-table-br{
+//     position: relative;
+//     // border-left: 2px solid white !important;
+//     // margin-left: 10px !important;
+//     &::before{
+//         content: " ";
+//         position: absolute;
+//         top: 0px;
+//         right: -2px !important;
+//         bottom: 0px !important;
+//         width: 2px ;
+//         background-color: white !important;
+//     }
+// }
