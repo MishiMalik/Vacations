@@ -435,16 +435,9 @@ main {
         border-bottom: none !important;
         width: 98%;
 }
-// &::after{
-//     content: " ";
-//     position: absolute;
-//     top: 0px;
-//     right: -6px !important;
-//     bottom: -2px !important;
-//     width: 2px ;
-//     background-color: white !important;
-// }
+
 } 
+// header border
 .price-tb-tr{
     position: relative;
     &::before{
@@ -462,9 +455,11 @@ main {
         width: 98%;
     }
 }
+// buttons border
 .price-table-bb{
     // border-bottom: 2px solid white !important;
     position: relative;
+    z-index: 10 !important;
     &::before{
         content: " ";
         position: absolute;
@@ -478,6 +473,7 @@ main {
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
         width: 98%;
+        z-index: -1 !important;
     }
     // &::after{
     //     content: " ";
